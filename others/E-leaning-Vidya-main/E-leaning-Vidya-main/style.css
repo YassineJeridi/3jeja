@@ -1,0 +1,79 @@
+*{
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #fffff;
+    background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
+}
+#main_image{
+     height: 38rem;
+    width: 38rem;
+    float:right;
+    margin: 4rem 4rem 4rem 0;
+}
+#theam{
+    height:10rem;
+    width: 33rem;
+    margin: 18rem 5rem ;
+    text-shadow: 2px 2px pink;
+}
+#theam1{
+    height:10rem;
+    width: 33rem;
+    float: right;
+    margin: 18rem 5rem ;
+    text-shadow: 2px 2px pink;
+}
+img{
+    height: 37rem;
+    width: 38rem;
+}
+#pic1{
+    height: 30rem;
+    width:30rem;
+    margin: 7rem;
+    float: left;
+}
+.navbar{
+    margin:3rem;
+}
+.nav-item{
+    margin-left:1.5rem;
+}
+@media only screen and (max-width: 600px) {
+    .navbar{
+        margin-bottom:0;
+    }
+    #main_image {
+      margin:0 auto;
+    }
+    #theam{
+        margin: 2rem;
+        display: flex;
+    }
+    #theam1{
+        margin: 0 2rem;
+        display: flex;
+    }
+    #pic1{
+        width:90%;
+        margin: 2rem;
+    }
+  }
+  #fo{
+    height: 10rem;
+    width: 100%;
+    background-color: aqua;
+  }
+/* Light Mode Styles */
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
