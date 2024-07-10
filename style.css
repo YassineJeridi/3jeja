@@ -18,7 +18,7 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --col1:#44bb;
+  --col1:rgba(0, 81, 255, 0.733);
   --col2:#f6f6f6;
   --col3:#44bb6a;
   --col4:#263238;
@@ -39,7 +39,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  padding-left: 30rem;
+  padding-left: 25rem;
 }
 section {
   padding: 3rem 5%;
@@ -82,7 +82,7 @@ section:nth-child(even) {
   left: 0;
   z-index: 1000;
   background: var(--col1);
-  width: 30rem;
+  width: 26rem;
   height: 100%;
   padding: 3rem;
   justify-content: space-between;
@@ -204,52 +204,14 @@ section:nth-child(even) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .home .image img {
   width: 100%;
+}
+
+.home .image video {
+  width: 100%;
+  border-radius: 30px;
+  margin: 20px;
 }
 
 .home .content {
@@ -798,7 +760,13 @@ section:nth-child(even) {
 
 
 
-
+.top_section
+{
+  position: absolute;  /* Remove from normal document flow */
+  top: 0;               /* Place at top */
+  right: 0;              /* Place at right edge */
+  margin-right:20px;
+}
 
 
 
@@ -808,14 +776,12 @@ section:nth-child(even) {
   .counter-container {
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
-    margin-top: 20%;
+    margin-top: 15%;
+    margin-bottom: 12%;
   }
-
-
   
   h1 {
-    font-size: 4em;
+    font-size: 5em;
     margin: 10px;
   }
   
@@ -825,12 +791,12 @@ section:nth-child(even) {
   
   }
   .numbers-container span{
-    font-size:  4em; /* Adjust font size as needed */
+    font-size:  5em; /* Adjust font size as needed */
     margin-right: 20px;
     margin-left: 20px;
   }
   .number {
-    font-size:  4em; /* Adjust font size as needed */
+    font-size:  5em; /* Adjust font size as needed */
     font-weight: bold;
     margin: 0 5px;
     color: #333;
