@@ -1,0 +1,25 @@
+
+
+.slider {
+    display: flex;
+    width: calc(10 * 20%);
+    animation: slide 20s linear infinite;
+}
+
+.slide {
+    flex: 0 0 10%;  
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

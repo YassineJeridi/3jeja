@@ -773,6 +773,39 @@ section:nth-child(even) {
 
 
 
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  width: calc(10 * 20%);
+  animation: slide 20s linear infinite;
+}
+
+.slide {
+  flex: 0 0 10%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-30%);
+  }
+}
+
+
+
+
   .counter-container {
     text-align: center;
     padding: 20px;
