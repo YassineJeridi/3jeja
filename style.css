@@ -198,12 +198,6 @@ section:nth-child(even) {
 }
 
 
-
-
-
-
-
-
 .home .image img {
   width: 100%;
 }
@@ -612,41 +606,21 @@ section:nth-child(even) {
   height: 15rem;
 }
 
-.reviews .box-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 2rem;
-}
 
-.reviews .box-container .box {
-  text-align: center;
-  padding: 3rem;
-  background: var(--col5);
-  border: 0.1rem solid var(--col8);
-}
 
-.reviews .box-container .box img {
-  height: 10rem;
-  width: 10rem;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
 
-.reviews .box-container .box h3 {
-  font-size: 2rem;
-  color: var(--col4);
-}
 
-.reviews .box-container .box p {
+
+
+
+.reviews  p {
   line-height: 2;
   padding: 2rem 0;
   font-size: 1.3rem;
   color: var(--col7);
 }
 
-.reviews .box-container .box .stars i {
+.reviews i {
   font-size: 1.7rem;
   color: var(--col3);
 }
@@ -776,8 +750,6 @@ section:nth-child(even) {
 
 
 
-
-
 .slider-container {
   margin-top: 8%;
   margin-bottom: 8%;
@@ -810,9 +782,6 @@ section:nth-child(even) {
   }
 }
 
-
-
-
   .counter-container {
     text-align: center;
     padding: 20px;
@@ -842,3 +811,59 @@ section:nth-child(even) {
     color: #333;
   }
   
+  
+/* testimonial start */
+.feedback {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.testimonials {
+  text-align: center;
+}
+.testimonials span{
+  font-size: 20px;
+}
+
+.testimonial {
+  display: none;
+  position: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.arrows {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #333;
+  user-select: none;
+}
+
+.arrow:hover {
+  color: #000;
+}
+/* testimonial end */
