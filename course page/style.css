@@ -540,19 +540,34 @@ section:nth-child(even) {
 
 .course-card h3 {
   margin: 15px;
-  font-size: 1.2em;
+  font-size: 2.4em;
 }
 
 .course-card .rating {
   margin: 0 15px;
   color: #ffbc00;
+  font-size: 1.8em;
 }
 
 .course-card .price {
   margin: 15px;
-  font-size: 1.1em;
+  font-size: 2em;
   color: #333;
   font-weight: bold;
   right: 0;
   justify-content: space-between;
+}
+.buttom-card-section
+{
+  display: flex;
+  justify-content: space-between;
+}
+.buttom-card-section a {
+  margin: 20px;
+}
+.buttom-card-section .available:hover {
+  background-color:var(--col3);
+}
+.buttom-card-section .unavailable:hover {
+  background-color:var(--col9);
 }
