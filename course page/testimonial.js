@@ -22,4 +22,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     prevButton.addEventListener('click', showPrevTestimonial);
 
     setInterval(showNextTestimonial, 4000);
+
+
+    
 });
