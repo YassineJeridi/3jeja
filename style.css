@@ -502,7 +502,7 @@ section:nth-child(even) {
 }
 .contact
 {
-  margin-top: 10%;
+  margin-top: -20px;
 }
 .contact .row {
   display: -webkit-box;
@@ -610,20 +610,6 @@ section:nth-child(even) {
 
 
 
-
-
-
-.reviews  p {
-  line-height: 2;
-  padding: 2rem 0;
-  font-size: 1.3rem;
-  color: var(--col7);
-}
-
-.reviews i {
-  font-size: 1.7rem;
-  color: var(--col3);
-}
 
 .blogs .box-container {
   display: -ms-grid;
@@ -819,7 +805,7 @@ section:nth-child(even) {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
+  
 }
 
 .testimonials {
@@ -832,9 +818,24 @@ section:nth-child(even) {
 .testimonial {
   display: none;
   position: flex;
-  top: 0;
-  left: 0;
-  right: 0;
+  margin-top: -200px;
+  margin-bottom: -300px;
+
+}
+.testimonial span{
+  margin: 10px;
+font-size: 30px;
+
+}
+.testimonial p{
+  margin: 10px;
+font-size: 20px;
+
+}
+.testimonial i{
+  margin-top: 10px;
+font-size: 20px;
+
 }
 
 .testimonial.active {
@@ -845,7 +846,7 @@ section:nth-child(even) {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-bottom: 10px;
+
 }
 .arrows {
   position: absolute;
