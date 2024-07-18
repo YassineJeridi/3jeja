@@ -123,7 +123,9 @@ section:nth-child(even) {
 .header .navbar a:hover {
   color: var(--col6);
 }
-
+.header .navbar .yellow{
+  color: var(--col6);
+}
 
 .header .navbar a:hover {
   color:var(--col6);
