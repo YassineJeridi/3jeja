@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Selection Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-selection-container">
+        <h1>Select a Quiz</h1>
+        <div class="quiz-list">
+            <div class="quiz-item">
+                <h2>General Knowledge</h2>
+                <p>Test your general knowledge with this quiz.</p>
+                <button onclick="startQuiz('general-knowledge')">Start Quiz</button>
+            </div>
+            <div class="quiz-item">
+                <h2>Science</h2>
+                <p>Challenge your knowledge of science.</p>
+                <button onclick="startQuiz('science')">Start Quiz</button>
+            </div>
+            <div class="quiz-item">
+                <h2>History</h2>
+                <p>How well do you know history?</p>
+                <button onclick="startQuiz('history')">Start Quiz</button>
+            </div>
+            <div class="quiz-item">
+                <h2>Mathematics</h2>
+                <p>Test your math skills with this quiz.</p>
+                <button onclick="startQuiz('mathematics')">Start Quiz</button>
+            </div>
+            <div class="quiz-item">
+                <h2>Literature</h2>
+                <p>Are you a literature buff? Find out!</p>
+                <button onclick="startQuiz('literature')">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

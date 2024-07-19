@@ -26,8 +26,8 @@
 
     <nav class="navbar">
         <a href="../index.html"> <i class="fas fa-angle-right"></i> home </a>
-        <a href="./course.html" class="yellow"> <i class="fas fa-angle-right"></i> courses </a>
-        <a href="../Quiz page/quiz.html"> <i class="fas fa-angle-right"></i> quiz </a>
+        <a href="../course page/course.html" > <i class="fas fa-angle-right"></i> courses </a>
+        <a href="./quiz.html" class="yellow"> <i class="fas fa-angle-right"></i> quiz </a>
         <a href="#courses"> <i class="fas fa-angle-right"></i> crew </a>
         <a href="#contact"> <i class="fas fa-angle-right"></i> contact </a>
     </nav>
@@ -58,66 +58,47 @@
 
 <!-- home section starts  -->
 
-  <div class="our_course">
-    <span></span>
-    <h1>Our Courses List</h1>
-  </div>
+
   
 <!-- home section ends -->
 
 
 <!-- course course-containersection start -->
-<div class="course-container">
-    <div class="course-card">
-        <img src="../imgs/courses_banner/course 1.png" alt="Course 1">
-        <h3>Full Course Sti</h3>
-        <div class="rating">⭐⭐⭐⭐⭐</div>
-        <div class="buttom-card-section">
-            <p class="price">99 Dt</p><a href="#courses" class="btn available">Subscribe Now</a>
+
+    <div class="quiz-selection-container">
+        <div class="our_course">
+            <span></span>
+            <h1><img src="../imgs/quiz_banner/quiz_word.avif" alt="" class="quiz-Banner"></h1>
+          </div>
+        <div class="quiz-list">
+            <div class="quiz-item">
+                <h2>General Knowledge</h2>
+                <p>Test your general knowledge with this quiz.</p>
+                <button onclick="startQuiz('general-knowledge')">Start Quiz</button>
+            </div>
+            <div class="quiz-item">
+                <h2>Science</h2>
+                <p>Challenge your knowledge of science.</p>
+                <button onclick="startQuiz('science')">Start Quiz</button>
+            </div>
+            <div class="quiz-item">
+                <h2>History</h2>
+                <p>How well do you know history?</p>
+                <button onclick="startQuiz('history')">Start Quiz</button>
+            </div>
+            <div class="quiz-item">
+                <h2>Mathematics</h2>
+                <p>Test your math skills with this quiz.</p>
+                <button onclick="startQuiz('mathematics')">Start Quiz</button>
+            </div>
+            <div class="quiz-item">
+                <h2>Literature</h2>
+                <p>Are you a literature buff? Find out!</p>
+                <button onclick="startQuiz('literature')">Start Quiz</button>
+            </div>
         </div>
     </div>
-    <div class="course-card">
-        <img src="../imgs/courses_banner/course 2.png" alt="Course 2">
-        <h3>Full Course Algorithm & Python</h3>
-        <div class="rating">⭐⭐⭐⭐⭐</div>
-        <div class="buttom-card-section">
-            <p class="price">99 Dt</p><a href="#courses" class="btn available">Subscribe Now</a>
-        </div>
-    </div>
-    <div class="course-card">
-        <img src="../imgs/courses_banner/course 3.png" alt="Course 3">
-        <h3>Correction bac partique ( STI ) </h3>
-        <div class="rating">⭐⭐⭐⭐⭐</div>
-        <div class="buttom-card-section">
-            <p class="price">? &nbsp;dt</p><a href="#courses" class="btn unavailable">comming-soon</a>
-        </div>
-       
-    </div>
-    <div class="course-card">
-        <img src="../imgs/courses_banner/course 4.png" alt="Course 4">
-        <h3>Correction bac partique ( Algorithmique )</h3>
-        <div class="rating">⭐⭐⭐⭐⭐</div>
-        <div class="buttom-card-section">
-            <p class="price">?&nbsp; dt</p><a href="#courses" class="btn unavailable">comming-soon</a>
-        </div>
-    </div>
-    <div class="course-card">
-        <img src="../imgs/courses_banner/course 5.png" alt="Course 5">
-        <h3>Correction sujet bac  ( Base de donnee )</h3>
-        <div class="rating">⭐⭐⭐⭐⭐</div>
-        <div class="buttom-card-section">
-            <p class="price">? &nbsp;dt</p><a href="#courses" class="btn unavailable">comming-soon</a>
-        </div>
-    </div>
-    <div class="course-card">
-        <img src="../imgs/courses_banner/course 6.png" alt="Course 6">
-        <h3>Correction bac partique ( PYTHON )</h3>
-        <div class="rating">⭐⭐⭐⭐⭐</div>
-        <div class="buttom-card-section">
-            <p class="price">? &nbsp; dt</p><a href="#courses" class="btn unavailable">comming-soon</a>
-        </div>
-    </div>
-</div>
+
 
 
 <!-- course section ends -->
