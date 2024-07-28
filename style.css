@@ -72,6 +72,7 @@ section:nth-child(even) {
   font-size: 1.7rem;
   border-radius: 20px;
 }
+
 .btn:hover {
   background: var(--col1);
 }
@@ -183,63 +184,78 @@ section:nth-child(even) {
   color: var(--col4);
 }
 
-.home {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 2rem;
-}
-.home .image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-}
 
 
-.home .image img {
-  width: 100%;
-}
 
-.home .image video {
-  width: 100%;
-  border-radius: 30px;
-  margin: 20px;
-}
 
-.home .content {
-  width: 45rem;
-}
+/* ***********************************      */
 
-.home .content span {
-  color: var(--col3);
-  font-size: 2rem;
-}
+@media (max-width: 2000px) {
+  .home {
+    text-align: center; /* Center align the content */
+    padding: 20px;
+  }
+  
+  .container {
+    display: inline-block;
+    max-width: 1000px;
+    width: 100%;
+     /* Align text inside the container to the left */
+  }
+  .image,
+  .content,.video {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 700px;
+    margin-right:20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    margin-top: -70px;
+  }
+  
+  .home video {
+    width: 100%;
+    border-radius: 30px;
+    max-width: 650px;
 
-.home .content h3 {
-  color: var(--col4);
-  font-size: 3rem;
-  padding: 2rem 0;
-}
-
-.home .content h3 a {
-  color: var(--col3);
-}
-
-.home .content h3 a:hover {
-  text-decoration: underline;
-}
-
-.home .content p {
-  font-size: 1.4rem;
-  color: var(--col7);
-  padding-bottom: 1rem;
-  line-height: 2;
-}
+  }
+  
+  .home .content {
+    width: 45rem;
+  }
+  
+  .home .content span {
+    color: var(--col3);
+    font-size: 2rem;
+  }
+  
+  .home .content h3 {
+    color: var(--col4);
+    font-size: 3rem;
+    padding: 2rem 0;
+  }
+  
+  .home .content h3 a {
+    color: var(--col3);
+  }
+  
+  .home .content h3 a:hover {
+    text-decoration: underline;
+  }
+  
+  .home .content p {
+    font-size: 1.4rem;
+    color: var(--col7);
+    padding-bottom: 1rem;
+    line-height: 2;
+  }
+  }
+  
 
 .info-container {
   display: -ms-grid;
@@ -689,11 +705,7 @@ section:nth-child(even) {
   text-decoration: underline;
 }
 
-@media (max-width: 1200px) {
-  html {
-    font-size: 55%;
-  }
-}
+
 
 @media (max-width: 991px) {
   body {
@@ -721,6 +733,97 @@ section:nth-child(even) {
     margin-right:20px;
   }
 }
+
+@media (max-width: 1500px) {
+
+  .container {
+    display: inline-block;
+    max-width: 1000px;
+    width: 100%;
+     /* Align text inside the container to the left */
+  }
+  .image,
+  .content,.video {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 500px;
+    margin-right:20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    margin-top: -70px;
+  }
+  
+  .home video {
+    width: 100%;
+    border-radius: 30px;
+    max-width: 500px;
+
+  }
+}
+@media (max-width: 1294px) {
+
+  .container {
+    display: inline-block;
+    max-width: 1000px;
+    width: 100%;
+     /* Align text inside the container to the left */
+  }
+  .image,
+  .content {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 400px;
+    margin-right:20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .image img {
+    margin-top: 20px;
+  }
+  .content h3{
+    font-size: 1px; 
+  }
+  .home .video{
+    margin-top: 80px;
+    margin-left: 20px;
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 1143px) {
+
+   .container {
+    display: inline-block;
+    max-width: 1000px;
+    width: 100%;
+     /* Align text inside the container to the left */
+  }
+  .image,
+  .content {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 320px;
+    margin-right:20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .image img {
+    margin-top: 20px;
+  }
+  .content h3{
+    font-size: 1px; 
+  }
+  .home .video{
+    margin-top: 80px;
+    max-width: 900px;
+  }
+}
+
 
 @media (max-width: 450px) {
   html {
