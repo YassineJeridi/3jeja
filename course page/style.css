@@ -508,6 +508,13 @@ section:nth-child(even) {
 }
 
 /* styles.css */
+
+
+.course-container-position{
+  display: flex;
+  justify-content: center;
+}
+
 .course-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -518,7 +525,7 @@ section:nth-child(even) {
   max-width: 1200px;
   width: calc(100% - 40px); /* Adjust width to account for margins */
   box-sizing: border-box; /* Ensure padding and margin are included in the width */
- 
+  align-items: center ;
 }
 
 .course-card {
