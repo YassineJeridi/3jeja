@@ -29,7 +29,7 @@
     <div class="col col-2">
       <div class="btn-box">
         <button class="btn btn-1" id="login" >Log In</button>
-        <button class="btn btn-2" id="register">Register</button>
+        <button class="btn btn-2" id="register" >Register</button>
       </div>
       <div class="login-form">
         <div class="form-title">
@@ -38,7 +38,7 @@
         </div>
         <div class="form-inputs">
         <div class="input-box">
-            <input type="text" class="input-field" placeholder="Username" >
+            <input type="text" class="input-field" placeholder="Username or Email" >
             
             <br>
            
@@ -52,63 +52,68 @@
             <br>
             
             <div class="forgot-pass">
-              <a href="#">Forgot Password?</a>
+              <a href="">Forgot Password?</a>
             </div> 
-            <div class="input-box"> <button class="input-submit">
-              <span>Log In</span> <i class="bx bx-right-arrow-alt"></i>
-            </button>
+            <div class="input-box"> <button type="submit" id="b1">Log In <i class="bx bx-right-arrow-alt"></i></button>
           </div>
 
         </div><div class="social-login">
-          <i id="s1" class="bx bxl-google"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
           <i id="s1" class="bx bxl-facebook"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-          <i id="s1" class="bx bxl-twitter"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-          <i id="s1" class="bx bxl-github"></i>
+          <i id="s1" class="bx bxl-instagram"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <i id="s1" class="bx bxl-tiktok"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <a><img src="envelope.png" id="s1"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+          <a><img src="social.png" id="s1"></a>
         </div>
       </div>
       
     </div>
+    <form >
     <div class="register-form">
+
       <div class="form-title">
-          <span>Resgister</span>
+          <span>Register</span>
 
       </div>
       <div class="form-inputs">
       <div class="input-box">
-          <input type="text" class="input-field" placeholder="Username" >
+          <input type="text" class="input-field" placeholder="Username" id="username" >
           
           <br>
-          <input type="email" class="input-field" placeholder="email" >
+          <input type="email" class="input-field" placeholder="email" id="email">
           
           <br>
-          <input type="date" class="input-field" placeholder="date">
+          <input type="date" class="input-field" placeholder="date" id="birthdate">
 
-          <input type="password" class="input-field" placeholder="password" >
+          <input type="password" class="input-field" placeholder="password" id="password">
           
-          <input type="password" class="input-field" placeholder="Confirm password" >
+          <input type="password" class="input-field" placeholder="Confirm password" id="confirmPassword">
           
           <br>
           <div class="list">
-          <select id="l1" aria-placeholder="Study Level"><option>2nd Year</option><option>3nd Year</option><option>4nd Year(Baccalaureate)</option></select>
+          <select id="l1" aria-placeholder="Study Level"><option style="color: black;">..</option><option style="color: black;">2nd Year</option><option style="color: black;">3nd Year</option><option style="color: black;">4nd Year(Baccalaureate)</option></select>
           <br>
           <select id="l2" aria-placeholder="Field of Study">
-            <option>Scientifique</option>
-            <option>Informatique</option>
-            <option>Economic</option>
+            <option style="color: black;">..</option>
+            <option style="color: black;">Scientifique</option>
+            <option style="color: black;">Informatique</option>
+            <option style="color: black;">Economic</option>
           </select></div>
       
-          <div class="input-box"> <button class="input-submit">
+          <div class="input-box"> 
+            <button id="b2"  type="submit"> 
             <span>Register</span> <i class="bx bx-right-arrow-alt"></i>
           </button>
         </div>
 
       </div><div class="social-login">
-        <i id="s1" class="bx bxl-google"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         <i id="s1" class="bx bxl-facebook"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <i id="s1" class="bx bxl-twitter"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <i id="s1" class="bx bxl-github"></i>
+        <i id="s1" class="bx bxl-instagram"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <i id="s1" class="bx bxl-tiktok"></i>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a><img src="envelope.png" id="s1"></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a><img src="social.png" id="s1"></a>
       </div>
     </div>
+  </form>
     
    </div>
 </div> 
