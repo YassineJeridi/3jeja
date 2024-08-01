@@ -529,7 +529,8 @@ section:nth-child(even) {
   --background-color: #f0f2f5;
   --container-bg-color: #fff;
   --primary-color: #007bff;
-  --primary-hover-color: #0056b3;
+  --title-color: #cc00ff;
+  --primary-hover-color: #12d400;
   --text-color: #333;
   --text-light-color: #666;
   --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -552,7 +553,7 @@ section:nth-child(even) {
 
 .quiz-selection-container h1 {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin-bottom: 40px;
   color: var(--text-color);
   font-family: var(--font-family);
@@ -576,7 +577,7 @@ section:nth-child(even) {
 
 .quiz-item h2 {
   margin-top: 0;
-  color: var(--primary-color);
+  color: var(--title-color);
   font-size: 2.5rem;
 }
 
