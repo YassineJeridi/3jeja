@@ -198,6 +198,248 @@ section:nth-child(even) {
           flex: 1 1 40rem;
 }
 
+/* quiz start */
+/* Global Styles */
+
+
+.quiz-container {
+  max-width: 800px;
+  margin: 130px auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.entete {
+  background-color: var(--col1);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.entete h1 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.entete p {
+  margin: 10px 0 0;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.quiz-header {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.timer {
+  font-size: 18px;
+  color: #6200ea;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background-color: #6200ea;
+  border-radius: 5px;
+  width: 0;
+  transition: width 0.5s;
+}
+
+.quiz-content {
+  padding: 20px 30px;
+}
+
+.question {
+  margin-bottom: 30px;
+}
+
+.question h4 {
+  margin: 0;
+  font-size: 22px;
+  color: #6200ea;
+  font-weight: 500;
+}
+
+.question p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #555;
+}
+
+.answers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.answer-card {
+  background-color: #f8f8f8;
+  border-radius: 12px;
+  flex: 1 1 calc(50% - 15px);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid transparent;
+}
+
+.answer-card:hover {
+  transform: translateY(-5px);
+  background-color: #eeeeee;
+}
+
+.answer-card.selected {
+  border-color: #6200ea;
+  background-color: #e8def8;
+}
+
+.answer-card.correct {
+  border-color: #00c853; /* Green border for the correct answer */
+  background-color: #e8f5e9; /* Light green background for the correct answer */
+}
+
+.answer-card span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #6200ea;
+}
+
+.answer-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+footer {
+  padding: 20px 30px;
+  text-align: center;
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+}
+
+.submit-btn {
+  padding: 12px 25px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #5300d4;
+}
+
+/* Popup Modal Styles */
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 60px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  text-align: center;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  color: #6200ea;
+}
+
+.popup h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #6200ea;
+}
+
+.popup p {
+  padding: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  .quiz-container {
+    margin: 20px;
+  }
+
+  .answers {
+    gap: 10px;
+  }
+
+  .answer-card {
+    flex: 1 1 calc(100% - 10px);
+  }
+}
+
+/* ... existing styles ... */
+
+#progress {
+  height: 100%;
+  background-color: green; /* Start with green */
+  transition: width 0.5s ease, background-color 0.5s ease; /* Smooth transition */
+}
+
+#time.blinking {
+  animation: blink-animation 1s steps(2, start) infinite; /* Blinking effect for the timer */
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* quiz end */
+
+
+
+
+
 /* partners start */
 .slider-container {
   margin-top: 8%;

@@ -26,8 +26,8 @@
 
     <nav class="navbar">
         <a href="../index.html"> <i class="fas fa-angle-right"></i> home </a>
-        <a href="./course.html" class="yellow"> <i class="fas fa-angle-right"></i> courses </a>
-        <a href="../Quiz page/quiz.html"> <i class="fas fa-angle-right"></i> quiz </a>
+        <a href="../course.html" > <i class="fas fa-angle-right"></i> courses </a>
+        <a href="../Quiz page/quiz.html" class="yellow"> <i class="fas fa-angle-right"></i> quiz </a>
         <a href="../Crew Page/crew.html"> <i class="fas fa-angle-right"></i> crew </a>
         <a href="#contact"> <i class="fas fa-angle-right"></i> contact </a>
     </nav>
@@ -52,11 +52,64 @@
 <!-- top section ends -->
 
 
-<div class="home">
-    <div class="content">
+<div class="quiz-container">
+    <header class="entete">
+      <h1>Quiz Name</h1>
+      <p>you need to choose an answer and submit </p>
+    </header>
+
+    <div class="quiz-header">
+      <div class="timer">
+        <span id="time">00:10</span>
+      </div>
+      <div class="progress-bar">
+        <div id="progress" class="progress"></div>
+      </div>
+    </div>
+
+    <div class="quiz-content">
+      <div class="question">
+        <h4>Question 1:</h4>
+        <p>WHO IS THE BEST ?</p>
+        <div class="answers">
+          <div class="answer-card" data-answer="A">
+            <span>A</span>
+            <p>KHLAF</p>
+          </div>
+          <div class="answer-card" data-answer="B">
+            <span>B</span>
+            <p>MOULA EL BACH</p>
+          </div>
+          <div class="answer-card" data-answer="C">
+            <span>C</span>
+            <p>PEXA</p>
+          </div>
+          <div class="answer-card" data-answer="D">
+            <span>D</span>
+            <p>3AM MOUHAMED</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional questions can be added here -->
 
     </div>
-</div>
+
+    <footer>
+      <button class="submit-btn">Submit</button>
+    </footer>
+  </div>
+
+  <!-- Modal Popup for Time Expiry Alert -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="popup-close">&times;</span>
+      <h2>Time's Up!</h2>
+      <p id="popup-message"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 
 
 <!-- banner section ends -->

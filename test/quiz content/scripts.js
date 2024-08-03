@@ -9,9 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
     let timeRemaining = 15; // 15 seconds timer
     let interval;
-    let timerStopped = false; // Flag to check if timer has been stopped
     const correctAnswer = 'C'; // The correct answer for the question
-    const explanation = 'The capital of France is Paris, known for its rich history and cultural heritage.'; // Explanation for the correct answer
+    const explanation = 'PEXA IS THE BEST.'; // Explanation for the correct answer
   
     function updateProgressBar() {
       const percentage = ((15 - timeRemaining) / 15) * 100;
@@ -25,15 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
   
     function startTimer() {
       interval = setInterval(() => {
-        if (timeRemaining <= 0) {
-          clearInterval(interval);
-          timerStopped = true;
-          showPopup("Time's up! The correct answer is " + correctAnswer + ". " + explanation);
-          return;
-        }
         timeRemaining--;
         updateTimer();
         updateProgressBar();
+        if (timeRemaining <= 0) {
+          clearInterval(interval);
+          timeRemaining = 0;
+          updateTimer();
+        }
       }, 1000);
     }
   
@@ -56,26 +54,19 @@ document.addEventListener("DOMContentLoaded", () => {
   
     answerCards.forEach(card => {
       card.addEventListener("click", () => {
-        if (!timerStopped) {
-          clearInterval(interval); // Stop the timer if an answer is selected
-          timerStopped = true; // Set flag to indicate timer has been stopped
-        }
         answerCards.forEach(card => card.classList.remove("selected"));
         card.classList.add("selected");
       });
     });
   
     submitBtn.addEventListener("click", () => {
-      if (timerStopped) {
-        const selectedCard = document.querySelector(".answer-card.selected");
-        if (selectedCard) {
-          // If an answer was selected, reveal it and the correct answer
-          revealAnswer();
-          showPopup(`You selected: ${selectedCard.querySelector("p").textContent}. The correct answer is ${correctAnswer}. ${explanation}`);
-        } else {
-          // If no answer was selected, just show the popup with the correct answer
-          showPopup(`No answer selected. The correct answer is ${correctAnswer}. ${explanation}`);
-        }
+      clearInterval(interval); // Stop the timer
+      const selectedCard = document.querySelector(".answer-card.selected");
+      if (!selectedCard) {
+        showPopup(`Time's up! The correct answer is ${correctAnswer}. ${explanation}`);
+      } else {
+        revealAnswer();
+        showPopup(`You selected: ${selectedCard.querySelector("p").textContent}. The correct answer is ${correctAnswer}. ${explanation}`);
       }
     });
   
