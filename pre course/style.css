@@ -44,7 +44,7 @@ body {
 section {
   padding: 3rem 5%;
 }
-section:nth-child(even) {
+.gray_section {
   background: var(--col2);
 }
 .heading {
@@ -222,6 +222,8 @@ section:nth-child(even) {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .course-banner img {
@@ -239,17 +241,18 @@ section:nth-child(even) {
 .video-section {
   text-align: center;
   margin: 20px 0;
-  
+  border-radius: 20px;
+  color: red;
 
 }
 
 .video-section h2 {
   color: #007bff; /* Blue heading */
+  font-size: 3.1em;
+  margin: 15px;
 }
 
-.video-section p {
-  margin-top: 10px;
-}
+
 
 .video-wrapper {
   position: relative;
@@ -274,6 +277,11 @@ section:nth-child(even) {
   margin: 20px 0;
   text-align: center;
 }
+.course-details h2{
+  margin: 20px 0;
+  font-size: 3.1em;
+
+}
 
 .course-details ul {
   list-style: none;
@@ -283,6 +291,10 @@ section:nth-child(even) {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.course-details li {
+  font-size: 2.1em;
 }
 
 .roadmap-item {
@@ -317,10 +329,10 @@ section:nth-child(even) {
 }
 
 .bonus-content {
-  font-size: 1.2em;
+  font-size: 1.7em;
   font-weight: bold;
-  color: #333;
-  background: linear-gradient(135deg, #e0f7fa 0%, #b3e5fc 100%); /* Light blue gradient */
+  color:white;
+  background: linear-gradient(135deg, #04aefd 0%, #cb04fd 100%); /* Light blue gradient */
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
@@ -331,6 +343,7 @@ section:nth-child(even) {
 .call-to-action {
   text-align: center;
   margin: 30px 0;
+  font-size: 1.4em;
   background-color: #f8f9fa; /* Light gray background */
   color: #333;
   padding: 20px;
@@ -354,7 +367,8 @@ section:nth-child(even) {
 }
 
 .cta-button:hover {
-  background-color: #e0a800;
+  background-color:#04aefd;
+  color: white;
 }
 
 .page-footer {
@@ -365,7 +379,7 @@ section:nth-child(even) {
 }
 
 .page-footer p {
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: #444;
 }
 
